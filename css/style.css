@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#laptop {display: none;}
+#tablet {display: none;}
+#phone {display: none;}
+
+/*phone*/
+@media only screen and (min-width: 350px){
+	#laptop {display: none;}
+	#tablet {display: none;}
+	#phone {display: none;}
+
+	#phone {display: unset;}
+
+	body {font-family: 'Patrick Hand', cursive;}
+
+	h1{
+		box-shadow: 5px 10px 10px #333333;
+		background-color: #ACA9AD;
+		border-radius: 50px;
+		cursor: default;
+	}
+
+	img, .tutorial{
+		border-radius: 50px;
+		box-shadow: 5px 10px 10px #222222;
+		filter: blur(1px);
+		padding: 5px;
+		margin: 5px;
+		border: 10px solid #ACA9AD;
+	}
+}
+
+/*tablet*/
+@media only screen and (min-width: 750px) {
+
+	#laptop {display: none;}
+	#tablet {display: none;}
+	#phone {display: none;}
+
+	#tablet {display: unset;}
+	
+	body {font-family: 'Patrick Hand', cursive;}
+
+	h1{
+		box-shadow: 5px 10px 10px #333333;
+		background-color: #ACA9AD;
+		border-radius: 50px;
+		cursor: default;
+	}
+
+	img, .tutorial{
+		border-radius: 50px;
+		box-shadow: 5px 10px 10px #222222;
+		filter: blur(1px);
+		padding: 5px;
+		margin: 5px;
+		border: 10px solid #ACA9AD;
+	}
+}
+
+/*laptop*/
+@media only screen and (min-width: 1000px) {
+	#laptop {display: none;}
+	#tablet {display: none;}
+	#phone {display: none;}
+
+	#laptop {display: unset;}
+
+	body {font-family: 'Patrick Hand', cursive;}
+
+h1{
+	box-shadow: 5px 10px 10px #333333;
+	background-color: #ACA9AD;
+	border-radius: 50px;
+	cursor: default;
+}
+
+img, .tutorial{
+	border-radius: 50px;
+	box-shadow: 5px 10px 10px #222222;
+	filter: blur(1px);
+	padding: 5px;
+	margin: 5px;
+	border: 10px solid #ACA9AD;
+}
+
+.not-alloud{
+	cursor: not-allowed;
+}
+
+.left{
+	padding: 20px 95px;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	cursor: pointer;
+	background-color: #5AA9AB;
+}
+
+.center{
+	padding: 20px 95px;
+	font-size: 20px;
+	margin-left: 13%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	cursor: pointer;
+	background-color: #5AA9AB;
+}
+.right{
+	padding: 20px 95px;
+	font-size: 20px;
+	margin-left: 13%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	cursor: pointer;
+	background-color: #5AA9AB;
+}
+
+.footer {
+ background-color: black;
+ color: white;
+ text-align: center;
+ align-items: center;
+}
+
+.link {
+ padding: 10px;
+ background-color: black;
+ color: white;
+ border: none;
+ cursor: pointer;
+}
+
+.futContent {
+ text-align: center;
+}
+}
+
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	   animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+  
+  
+  .fade-scale {
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all .25s linear;
+	-o-transition: all .25s linear;
+	transition: all .25s linear;
+  }
+  
+  .fade-scale.in {
+	opacity: 1;
+	transform: scale(1);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 35%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }

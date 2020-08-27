@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+em {
+	color: #fff;
+	margin-left: 10px;
+}
+
+button {
+	width: 90px;
+	height: 10px;
+	font-size: 10px;
+}
+
+.wellcomeparallax {
+  /* The image used */
+  background-image: url("../img/Wellcom_vote.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+  min-width: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+	box-shadow: 5px 10px 10px #333333;
+	background-color: #ACA9AD;
+	border-radius: 50px;
+}
+
+img, video{
+	border-radius: 50px;
+	box-shadow: 5px 10px 10px #222222;
+	filter: blur(1px);
+	padding: 5px;
+	margin: 5px;
+	border: 10px solid #ACA9AD;
+}
+
+.left{
+	padding: 15px 20px;
+    font-size: 15px;
+    line-height: 0px;
+    margin-left: 5%;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: #5AA9AB;
+}
+
+.center_L{
+	padding: 15px 20px;
+    font-size: 15px;
+    line-height: 0px;
+    margin-left: 12%;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: #5AA9AB;
+}
+.center_R{
+	padding: 15px 20px;
+    font-size: 15px;
+    line-height: 0px;
+    margin-left: 5%;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: #5AA9AB;
+}
+.right{
+	padding: 20px 95px;
+	font-size: 20px;
+	margin-left: 13%;
+	margin-top: 2%;
+	cursor: pointer;
+}

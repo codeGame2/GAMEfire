@@ -1,0 +1,57 @@
+<doctype html>
+<html>
+	<head>
+		<meta chrset="UTF-8">
+		<title>Download</title>
+		<link rel="stylesheet" href="css/download.css">
+		<link rel="icon" href="img/favicon.png">
+	</head>
+	<body bgcolor="#605D61">
+		<!-- Tab links -->
+		<div class="tab">
+			<button class="tablinks" onClick="openTabWin()">For Windows</button>
+			<button class="tablinks" onClick="openTabMac()">For Mac</button>
+		</div>
+
+		<!-- Tab content -->
+		<div class="tabcontent" style="color: #ffffff;">
+		<div id="win">
+			<a href="" download="GAMEfire"><button>Download Now for Windows</button></a>
+			<h3>Some steps to install for Windows</h3>
+			<br>
+			<ol>
+				<li>Install the .zip file.</li>
+				<li>Extract the downloaded file.</li>
+				<li>Move extracted folder to "program Files" in the path:
+					<br>
+					C:/program Files
+				</li>
+				<li>Open the folder.</li>
+				<li>Right-click on "GAMEfire.exe" and select copy.</li>
+				<li>Then, goto Desktop.</li>
+				<li>Press shift + ctrl + v to paste the shortcut.
+					<br>
+					<strong>NOTE:</strong> It is not please don't press ctrl + v or paste
+				</li>
+			</ol>
+		</div>
+		<div id="mac">
+			<button>Download Now For Mac</button>
+		</div>
+		</div>
+		<script>
+			document.getElementById("win").style.display = "block";
+			document.getElementById("mac").style.display = "none";
+
+			function openTabWin() {
+  				document.getElementById("win").style.display = "block";
+  				document.getElementById("mac").style.display = "none";
+			}
+
+			function openTabMac() {
+				document.getElementById("mac").style.display = "block";
+  				document.getElementById("win").style.display = "none";
+			}
+		</script>
+	</body>
+</html>
